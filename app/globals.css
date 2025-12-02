@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
+
+
 @layer base {
   .font-helvetica {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -20,10 +23,17 @@
   .font-regular {
     font-weight: 400;
   }
+
+  .cormorant-normal {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Cormorant", serif;
 }
 
 @layer utilities {
