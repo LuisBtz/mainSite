@@ -5,43 +5,34 @@ import "./globals.css"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "Luis Benítez - Fotografía y Caligrafía en Monterrey",
+  title: "Luis Benítez — En construcción",
   description:
-    "Fotografía profesional y caligrafía artística en Monterrey. Sesiones personales, bodas, productos y eventos especiales. Capturando momentos únicos con estilo y elegancia.",
-  keywords: "fotografía monterrey, caligrafía, bodas, retratos, productos, Luis Benítez",
+    "Este sitio está en construcción. Si buscas fotografía de bodas, visita photography.luisbtz.com.",
   authors: [{ name: "Luis Benítez" }],
   metadataBase: new URL("https://luisbtz.com"),
   openGraph: {
-    title: "Luis Benítez - Fotografía y Caligrafía en Monterrey",
+    title: "Luis Benítez — En construcción",
     description:
-      "Fotografía profesional y caligrafía artística en Monterrey. Sesiones personales, bodas, productos y eventos especiales.",
+      "Este sitio está en construcción. Si buscas fotografía de bodas, visita photography.luisbtz.com.",
     type: "website",
     locale: "es_ES",
     url: "https://luisbtz.com",
-    siteName: "Luis Benítez Fotografía",
+    siteName: "Luis Benítez",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Luis Benítez - Fotografía y Caligrafía en Monterrey",
+    card: "summary",
+    title: "Luis Benítez — En construcción",
     description:
-      "Fotografía profesional y caligrafía artística en Monterrey. Sesiones personales, bodas, productos y eventos especiales.",
+      "Este sitio está en construcción. Si buscas fotografía de bodas, visita photography.luisbtz.com.",
   },
   robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
+    index: false,
+    follow: false,
   },
   icons: {
-    icon: "/favicon.png", // Ruta al favicon para la mayoría de los navegadores
-    shortcut: "/favicon.png", // Para compatibilidad con algunos navegadores antiguos
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
   },
-  generator: "v0.dev",
 }
 
 export default function RootLayout({
@@ -51,9 +42,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth">
-      <body className="font-helvetica">
+      <body className="font-helvetica antialiased">
         <GoogleAnalytics />
-        <Suspense fallback={<div>Loading...</div>}>{children}</Suspense>
+        <Suspense fallback={null}>{children}</Suspense>
       </body>
     </html>
   )
